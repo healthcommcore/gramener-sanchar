@@ -23,18 +23,28 @@
 <body>
 	<header class="bg-danger position-fixed z-9 w-100">
 		<div class="container px-md-3 px-0 py-2">
-			<figure class=" mb-0 d-block">
-			<?php
-			$custom_logo_id = get_theme_mod ( 'custom_logo' );
-			$logo = wp_get_attachment_image_src ( $custom_logo_id, 'full' );
-			$mainlogo = get_template_directory_uri () . "/images/logo.svg";
-			if (has_custom_logo ()) {
-				$mainlogo = esc_url ( $logo [0] );
-			}
-			?>
-				<a href="."> <img src="<?php echo $mainlogo; ?>" alt="logo" class="img-fluid d-none d-md-block"> <img src="<?php echo $mainlogo; ?>" alt="logo" class="img-fluid d-md-none">
-				</a>
-			</figure>
+      <div class="row">
+        <div class="col-md-4">
+          <figure class=" mb-0 d-block">
+          <?php
+          $custom_logo_id = get_theme_mod ( 'custom_logo' );
+          $logo = wp_get_attachment_image_src ( $custom_logo_id, 'full' );
+          $mainlogo = get_template_directory_uri () . "/images/sanchar_logo.svg";
+          $india_center_logo = get_template_directory_uri () . "/images/india_center_logo.svg";
+          if (has_custom_logo ()) {
+            $mainlogo = esc_url ( $logo [0] );
+          }
+          ?>
+            <a href="."> <img src="<?php echo $mainlogo; ?>" alt="logo" class="img-fluid d-none d-md-block"> <img src="<?php echo $mainlogo; ?>" alt="Project Sanchar logo" class="img-fluid d-md-none">
+            </a>
+          </figure>
+        </div>
+        <div class="col-md-3 offset-md-5">
+          <a class="india-center-logo float-right" href="https://www.hsph.harvard.edu/india-center/" target="_blank" rel="noopener noreferrer">
+            <img src="<?php echo $india_center_logo; ?>" alt="Harvard TH Chan India Center logo" class="img-fluid" />
+          </a>
+        </div>
+      </div>
 		</div>
 		<div class="w-100 z-9 bg-white " id="nav">
 			<div class="d-flex justify-content-between align-items-center d-md-none position-relative py-3 mobile-menu-container">

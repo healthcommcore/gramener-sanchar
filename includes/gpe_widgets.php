@@ -19,10 +19,19 @@ if (function_exists ( 'register_sidebar' )) {
         'after_title' => ''
     ) );
     register_sidebar ( array (
+        'name' => 'Home hero image',
+        'id' => 'home-hero-image',
+        'description' => 'Put hero images in this widget',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => ''
+    ) );
+    register_sidebar ( array (
         'name' => 'Home Text',
         'id' => 'home-text',
         'description' => 'Widget for displaying Home Text',
-        'before_widget' => '<h3 class="mb-0 lh-1 display-3 text-color6 f-14">',
+        'before_widget' => '<h3 class="mb-0 lh-1 f-14 home-text-widget">',
         'after_widget' => '</h3>',
         'before_title' => '',
         'after_title' => ''
