@@ -1,0 +1,20 @@
+/** 
+ * HCC styles
+ *
+ * 11/14/19
+ */
+
+.main-menu-color {
+  color: #666;
+}
+
+.main-menu-color:hover {
+  color: #A11C2F;
+}
+
+.dropdown-item:hover, 
+.dropdown-item:focus,
+li.active.nav-item > .dropdown-item {
+  background: #A11C2F;
+  color: #fff;
+}

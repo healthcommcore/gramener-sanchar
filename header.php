@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title><?php wp_title(' ', true, 'right'); ?> </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="shortcut icon" type="<?php echo get_template_directory_uri() ?>/image/png" href="<?php echo get_template_directory_uri() ?>/images/favicon.png"/>
+
+<link href="https://fonts.googleapis.com/css?family=Chivo:400,700&display=swap" rel="stylesheet">
+<link href="<?php echo get_template_directory_uri() ?>/css/bootstraptheme.css" rel="stylesheet" />
+<link href="<?php echo get_template_directory_uri() ?>/css/all.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/noty.css">
+<link href="<?php echo get_stylesheet_uri();?>" rel="stylesheet" />
+
+
+<?php wp_head();?>
+</head>
+<body>
+	<header class="bg-danger position-fixed z-9 w-100">
+		<div class="container px-md-3 px-0 py-2">
+			<figure class=" mb-0 d-block">
+			<?php
+			$custom_logo_id = get_theme_mod ( 'custom_logo' );
+			$logo = wp_get_attachment_image_src ( $custom_logo_id, 'full' );
+			$mainlogo = get_template_directory_uri () . "/images/logo.svg";
+			if (has_custom_logo ()) {
+				$mainlogo = esc_url ( $logo [0] );
+			}
+			?>
+				<a href="."> <img src="<?php echo $mainlogo; ?>" alt="logo" class="img-fluid d-none d-md-block"> <img src="<?php echo $mainlogo; ?>" alt="logo" class="img-fluid d-md-none">
+				</a>
+			</figure>
+		</div>
+		<div class="w-100 z-9 bg-white " id="nav">
+			<div class="d-flex justify-content-between align-items-center d-md-none position-relative py-3 mobile-menu-container">
+				<div class="position-absolute ">
+					<div id="mobile-menu" class="d-md-none px-3 py-3">
+						<img src="<?php echo get_template_directory_uri() ?>/images/menu.svg" alt="menu" />
+					</div>
+				</div>
+				<div class="flex-grow-1 text-center">
+					<p class="mb-0 font-weight-bold font-chivo text-danger text-capitalize f-18"><?php the_title();?></p>
+				</div>
+			</div>
+			<div id="mySidenav" class="sidenav display-3 mb-0">
+				<ul class="nav d-block d-md-flex text-center font-chivo w-100 justify-content-center mx-auto px-3 px-md-0 font-weight-bold bg-white shadow py-2">
+					<?php
+					if (has_nav_menu ( 'header-menu' )) {
+						echo wp_nav_menu ( array (
+								'theme_location' => 'header-menu',
+								'container' => false,
+								'menu_class' => 'navbar-nav nav-item',
+								'fallback_cb' => '__return_false',
+								'items_wrap' => '%3$s',
+								'depth' => 0,
+								'walker' => new bootstrap_4_walker_nav_menu () 
+						) );
+					}
+					?>
+				</ul>
+			</div>
+		</div>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145103114-1"></script>
+		<script>
+    /* global dataLayer */
+    window.dataLayer = window.dataLayer || []
+    function gtag(){dataLayer.push(arguments)}
+    gtag('js', new Date())
+    gtag('config', 'UA-145103114-1')
+  </script>
+	</header>
+	<!-- TODO: Filter bars -->

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+    <title>254C8828-05D0-4CEE-B9B5-B484CFC80F0B@1.5x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="-8.60913573%" y1="-12.1508832%" x2="67.9745709%" y2="74.2260403%" id="linearGradient-1">
+            <stop stop-color="#791903" offset="0%"></stop>
+            <stop stop-color="#FE776B" offset="100%"></stop>
+        </linearGradient>
+        <path d="M15.4356788,1.60493653 C14.7085652,2.63169513 10.0109341,9.34841383 10.0109341,9.34841383 C10.0109341,9.34841383 7.15835293,5.11972101 4.76261366,1.48496293 C6.32837376,0.521914102 8.12774331,0.0010091427 10.0054678,-2.48689958e-14 C12.0076769,0.00107120484 13.8722677,0.590570496 15.4356788,1.60493653 Z M16.1600883,2.12204749 C17.1117042,2.86720352 17.9248901,3.78103892 18.55465,4.81855773 C19.4718774,6.3296744 20,8.10316185 20,9.99999927 C20,15.5228472 15.5228486,20 10,20 C4.47715284,20 3.07309733e-13,15.5228472 3.07309733e-13,9.99999927 C3.07309733e-13,6.71766658 1.58139715,3.80468896 4.02385199,1.98140591 C4.3089571,2.41394622 4.60835646,2.86677464 4.92053544,3.33768478 C4.97549779,3.42058513 4.97549779,3.42058513 5.03046955,3.50346731 C5.95864371,4.90276168 6.95292162,6.39170296 7.94717296,7.8739315 C8.29514064,8.39268125 8.61826068,8.87355407 8.90825844,9.30449209 C9.00977506,9.45534627 9.09990645,9.58919258 9.17761814,9.70452347 C9.22427496,9.77376626 9.25640305,9.82141934 9.27308567,9.84614983 L9.99768315,10.9202998 L10.7402865,9.85851831 C10.7832964,9.7970223 10.7832964,9.7970223 10.976917,9.52021369 C11.1651689,9.25108913 11.3749558,8.95120564 11.6009046,8.62825352 C12.2464686,7.70553909 12.8922093,6.78282729 13.4994333,5.91551251 C14.9076965,3.90405595 15.8645609,2.53941791 16.1600883,2.12204749 Z" id="path-2"></path>
+        <filter x="-7.5%" y="-7.5%" width="115.0%" height="115.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.968627451   0 0 0 0 0.964705882   0 0 0 0 0.949019608  0 0 0 0.362598339 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="1.44424438%" y1="11.6409766%" x2="74.5246751%" y2="72.6847634%" id="linearGradient-4">
+            <stop stop-color="#150D12" offset="0%"></stop>
+            <stop stop-color="#6A5156" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DATA-PORTAL.3A---STEP-1_-Landing" transform="translate(-645.000000, -496.000000)">
+            <g id="Main-content" transform="translate(0.000000, 116.000000)">
+                <g id="People-chunk" transform="translate(324.220000, 0.000000)">
+                    <g id="Data-Topics" transform="translate(0.780000, 0.000000)">
+                        <g id="Tile-1" transform="translate(101.000000, 234.000000)">
+                            <g id="Download-etc" transform="translate(-0.500000, 134.000000)">
+                                <g id="Group-5" transform="translate(194.000000, 12.000000)">
+                                    <g id="icVisualisation" transform="translate(26.000000, 0.000000)">
+                                        <g id="Combined-Shape">
+                                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                        </g>
+                                        <path d="M15.4356788,1.60493653 C13.8722677,0.590570496 12.0076769,0.00107120484 10.0054678,-7.28306304e-14 C8.12774331,0.0010091427 6.32837376,0.521914102 4.76261366,1.48496293 C7.15835293,5.11972101 10.0109341,9.34841383 10.0109341,9.34841383 C10.0109341,9.34841383 14.7085652,2.63169513 15.4356788,1.60493653 Z" id="Combined-Shape" fill="url(#linearGradient-4)"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
