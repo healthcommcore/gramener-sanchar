@@ -19,9 +19,9 @@ if (function_exists ( 'register_sidebar' )) {
         'after_title' => ''
     ) );
     register_sidebar ( array (
-        'name' => 'Home hero image',
-        'id' => 'home-hero-image',
-        'description' => 'Put hero images in this widget',
+        'name' => 'Home carousel',
+        'id' => 'home-carousel',
+        'description' => 'Put homepage carousel in this widget',
         'before_widget' => '',
         'after_widget' => '',
         'before_title' => '',
