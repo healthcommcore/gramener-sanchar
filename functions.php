@@ -97,14 +97,16 @@ function get_posts_from_people() {
         $output .= '<div class="row ">';
         $output .= '<div class="col-6 col-sm-12 col-md-3 col-lg-3 col-xl-3 pb-3 pb-md-0 order-0">';
         $output .= '<figure class="mb-0">';
+        $output .= '<a href="' . $link . '">';
         $output .= '      <img src="' . $thumb [0] . '" alt="person-image" class="img-fluid">';
+        $output .= '</a>';
         $output .= '</figure>';
         $output .= '</div>';
         $output .= '<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 order-2 order-md-1 order-lg-1">';
         $output .= '<div class="card h-100 border-0 bg-transparent">';
         $output .= '<div class="card-header py-0 px-0 pb-3 bg-transparent border-0">';
         $output .= '<div class="display-2 text-color6 font-weight-bold">';
-        $output .= '<span class="sm5 d-block f-20">' . $pep->post_title . '</span>';
+        $output .= '<a class="sm5 d-block f-20" href="' . $link . '">' . $pep->post_title . '</a>';
         $output .= '</div>';
         $output .= '</div>';
         $output .= '<div class="card-body p-0 ">';

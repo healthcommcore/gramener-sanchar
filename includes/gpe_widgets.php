@@ -49,10 +49,10 @@ if (function_exists ( 'register_sidebar' )) {
         'name' => 'Home Signup',
         'id' => 'home-signup',
         'description' => 'Signup Widget Area',
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '',
-        'after_title' => ''
+        'before_widget' => '<a href="/contact-us">',
+        'after_widget' => '</a>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
     ) );
     register_sidebar ( array (
         'name' => 'Footer Text',

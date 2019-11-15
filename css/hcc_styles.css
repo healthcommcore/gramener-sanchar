@@ -23,3 +23,18 @@ li.active.nav-item > .dropdown-item {
   background: #A11C2F;
   color: #fff;
 }
+
+/** Homepage slider **/
+.owl-item h1 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.4em;
+  text-shadow: -2px 2px 4px #333;
+}
+
+.owl-item a {
+  background: #F5A623;
+  padding: 0.6em 1.3em;
+  display: inline-block;
+  color: #fff;
+}
