@@ -49,9 +49,9 @@ if (function_exists ( 'register_sidebar' )) {
         'name' => 'Home Signup',
         'id' => 'home-signup',
         'description' => 'Signup Widget Area',
-        'before_widget' => '<a href="/contact-us">',
-        'after_widget' => '</a>',
-        'before_title' => '<h3>',
+        'before_widget' => '<div class="justify-content-between align-items-center px-xl-3 py-xl-2">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="text-danger font-chivo">',
         'after_title' => '</h3>'
     ) );
     register_sidebar ( array (

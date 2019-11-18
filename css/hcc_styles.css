@@ -38,3 +38,13 @@ li.active.nav-item > .dropdown-item {
   display: inline-block;
   color: #fff;
 }
+
+.signup-link {
+  display: block;
+  background: url("../images/arrow-link.svg") 100% 50% no-repeat;
+}
+
+.signup-link .textwidget p {
+  color: #777;
+  font-size: 1.2em;
+}

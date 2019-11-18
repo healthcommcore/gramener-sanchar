@@ -25,14 +25,13 @@ get_header ();
 		
 <!-- Home signup -->	
 		<div class="bg-3 mb-5 px-3 p-md-4 border-custom rounded mt-5">
-			
 				<?php  //dynamic_sidebar('Social Widget') ; ?>
-				<div class="d-flex  justify-content-between align-items-center px-xl-3 py-xl-2">
+				<a class="signup-link text-decoration-none" href="/contact-us">
 					<?php  dynamic_sidebar('Home Signup') ; ?>
-				</div>
-				
-			
+				</a>
 		</div>
+
+<!-- end row -->
 	</div>
 	
 	</main>
