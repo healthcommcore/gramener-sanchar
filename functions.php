@@ -150,6 +150,7 @@ if (! (function_exists ( 'wp_get_attachment_by_post_name' ))) {
     }
 }
 
+// SANCHAR Briefs
 function get_curl_briefs() {
     $output = '';
     $upload_dir = wp_upload_dir ();
@@ -160,17 +161,22 @@ function get_curl_briefs() {
         $indicator = ( array ) $indicator;
         // debug($indicator);
         $output .= '<div class="data-card col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pb-3 pr-xl-1">';
-        $output .= '<div class="card p-3 border-0 shadow-sm h-100">';
-        $output .= '<div class="card-header bg-transparent border-0 p-0">';
+        $output .= '<div class="card pt-3 border-0 shadow-sm h-100">';
+        $output .= '<div class="card-header bg-transparent border-0 px-3 pt-0">';
         $output .= '<div class="mb-4 text-color9 font-weight-bold font-chivo display-3">';
         $output .= '<span class="sm5 d-block f-16">' . $indicator ['Variable Name'] . '</span>';
         $output .= '</div>';
         $output .= '</div>';
         $output .= '<div class="card-body p-0"></div>';
-        $output .= '<div class="card-footer  bg-transparent border-0 px-0 h3 pb-0 pt-2 mb-0">';
+        $output .= '<div class="card-footer  bgcolor10 border-0 px-3 h3 pb-2 pt-3 mb-0">';
+        $output .= '<a class="text-center sm4 py-1 download-data px-md-0" href="' . $upload_dir ['baseurl'] . '/data/' . trim ( $indicator ['PDF'] ) . '.pdf" target="_blank" rel="noopener">';
+        $output .= '<img src="/wp-content/uploads/2019/11/download.svg" alt="open-in-new-arrow" class="d-block mx-auto" /> <span class="d-block pt-1 text-color6 f-10">DOWNLOAD</span>';
+        $output .= '</a>';
+    /** OLD
         $output .= '<a class="bg-color10 d-flex justify-content-around sm3 nav-link text-primary  font-weight-bold justify-content-center  align-items-center" href="' . $upload_dir ['baseurl'] . '/data/' . trim ( $indicator ['PDF'] ) . '.pdf" target="_blank" rel="noopener">';
         $output .= '<img src="' . get_template_directory_uri () . '/images/download-arrow.svg" alt="download-arrow" /> <span class="f-14">Download SANCHAR Brief PDF</span>';
         $output .= '</a>';
+    **/
         $output .= '</div>';
         $output .= '</div>';
         $output .= '</div>';
