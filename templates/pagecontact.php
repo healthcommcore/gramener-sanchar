@@ -1,5 +1,5 @@
-<main class="two border-bottom data_portal-no vh-100 overflow-auto " style="padding-top: 110px;">
-<div class=" min-vh-100 px-0 px-md-0 ">
+<main class="min-vh-90 two-1  border-bottom pb-md-0 pb-lg-0 " style="padding-top: 110px;">
+<div class=" min-vh-90 px-0 px-md-0 ">
       <div class="d-md-flex ">
         <div class="bg-color5 min-vh-90  pb-5 pt-4 px-0 px-md-0 col-lg-5">
           <div class="h-100 col-12 ml-auto col-lg-10">

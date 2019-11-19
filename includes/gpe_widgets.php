@@ -57,7 +57,7 @@ if (function_exists ( 'register_sidebar' )) {
     register_sidebar ( array (
         'name' => 'Footer Text',
         'id' => 'footer-text',
-        'description' => 'Signup Widget Area',
+        'description' => 'Footer text',
         'before_title' => '',
         'after_title' => '',
         'before_widget' => '',
@@ -68,10 +68,10 @@ if (function_exists ( 'register_sidebar' )) {
         'name' => 'Get in Touch',
         'id' => 'getintouch',
         'description' => 'Get in Touch widget to display in contact us page',
-        'before_title' => '',
-        'after_title' => '',
-        'before_widget' => '',
-        'after_widget' => ''
+        'before_title' => '<h4 class="font-chivo font-weight-bold mb-0 get-in-touch-heading">',
+        'after_title' => '</h4>',
+        'before_widget' => '<div class="pt-4">',
+        'after_widget' => '</div>'
         
     ) );
     register_sidebar ( array (
@@ -80,8 +80,8 @@ if (function_exists ( 'register_sidebar' )) {
         'description' => 'Address widget to display in contact us page',
         'before_title' => '',
         'after_title' => '',
-        'before_widget' => '',
-        'after_widget' => ''
+        'before_widget' => '<div class="mt-2">',
+        'after_widget' => '</div>'
         
     ) );
     register_sidebar ( array (

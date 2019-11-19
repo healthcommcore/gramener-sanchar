@@ -20,7 +20,7 @@
 
 <?php wp_head();?>
 </head>
-<body>
+<body class="h-100 bg-2">
 	<header class="bg-danger position-fixed z-9 w-100">
 		<div class="container px-md-3 px-0 py-2">
       <div class="row">

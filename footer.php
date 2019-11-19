@@ -1,4 +1,4 @@
-<footer class="bg-white  py-4 w-100 box-1 position-fixed d-none z-9">
+<footer class="bg-white py-4 w-100 box-1">
 	<div class="container my-2">
 		<div class="row">
 			<div class="col">
@@ -33,66 +33,6 @@
 <script src="<?php echo get_template_directory_uri() ?>/js/data_portal.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/common.js"></script>
 <?php wp_footer();?>
-<style>
-.textwidget p {
-	margin: 0px !important;
-}
-</style>
-<script>
-	$( document ).ready(function() {
-		 var url = new URL(window.location.href);
-		$('[data-spy="scroll"]').each(function (i,spy) {
-			  $(spy).scrollspy('refresh');
 
-			 
-				var view = url.searchParams.get("view");
-				if (window.screen.availWidth < 768) {
-					$('main').animate({
-				        scrollTop: $("#"+view)[0].offsetTop - $('.navbar-nav-scroll').height()
-				      }, 500);
-				}else{
-					$('main').animate({
-				        scrollTop: $("#"+view)[0].offsetTop
-				      }, 500);
-				}
-				$(".nav-pills a").removeClass('active')
-			    $(".nav-pills ."+view).addClass('active')
-		    });
-		
-	    /* url.update({
-	      view: view.replace(/#/g, '')
-	    }) */
-	    
-	    
-	});
-	
-	$(".close-frm").on("click", function(){
-		$(".response-frm-submit").hide();
-		});
-
-	$(document)
-	  .on('click', 'a[href^="#"]', function (event) {
-	    event.preventDefault()
-	    if (window.screen.availWidth < 768) {
-	      $('main').animate({
-	        scrollTop: $($.attr(this, 'href'))[0].offsetTop - $('.navbar-nav-scroll').height()
-	      }, 500)
-	    } else {
-	      $('main').animate({
-	        scrollTop: $($.attr(this, 'href'))[0].offsetTop
-	      }, 500)
-	    }
-	    $(".nav-pills a").removeClass('active')
-	    $(".nav-pills a[href='" + $.attr(this, 'href') + "']").addClass('active')
-	    url.update({
-	      view: $(this).attr('href').replace(/#/g, '')
-	    })
-	    history.pushState({}, '', url.toString())
-	  })
-	  
-	  
-	  
-
-	</script>
 </body>
 </html>
