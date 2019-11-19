@@ -1,4 +1,5 @@
 <footer class="bg-white py-4 w-100 box-1">
+<!--<footer class="bg-white py-4 w-100 box-1 position-fixed z-9">-->
 	<div class="container my-2">
 		<div class="row">
 			<div class="col">

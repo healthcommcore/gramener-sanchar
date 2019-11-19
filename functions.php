@@ -216,9 +216,10 @@ function get_curldata_healththemes() {
             $pdetailslink = $detailslink.$appender."indicator=".$hcard;
             $imgname = str_replace ( ' ', '_', strtolower ( $hcard ) );
             $imgurl = wp_get_attachment_by_post_name ( $imgname );
+            $relative_url = str_replace('http://localhost/sanchar', '', $imgurl->guid);
             $output .= '<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pb-3 pr-xl-1 selected_program cursor-pointer" data-area-name="' . $hcard . '">';
             $output .= '<a href="'.$pdetailslink.'""><div class="card p-1 border-0 shadow h-100">';
-            $output .= '<img src="' . $imgurl->guid . '" class="card-img-top" alt="' . $imgname . '">';
+            $output .= '<img src="' . $relative_url . '" class="card-img-top" alt="' . $imgname . '">';
             $output .= '<div class="card-body px-3 py-2">';
             $output .= '     <p class="card-text mb-0 font-weight-bold font-chivo text-capitalize f-18">' . $hcard . '</p>';
             $output .= '</div>';

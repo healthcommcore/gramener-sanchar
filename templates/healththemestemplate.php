@@ -25,7 +25,7 @@ while ( have_posts () ) :
 			'category' => $categoryterm 
 	);
 	$menulist = get_posts ( $args );
-	$backlink = "";
+	$backlink = "/health-themes";
 	foreach ( $menulist as $menu ) {
 		$link = get_permalink ( $menu );
 		$active = ($pid == $menu->ID) ? "active" : "";
@@ -129,6 +129,7 @@ while ( have_posts () ) :
 				<div class="row px-lg-5 search_heath_row">
 					<?php
 	// debug($curldata);
+
 	foreach ( $curldata as $indicator ) {
 		$indicator = ( array ) $indicator;
 		?>
@@ -143,18 +144,30 @@ while ( have_posts () ) :
 							</div>
 							<div class="card-body p-0 m-0"></div>
 							<div class="card-footer bg-transparent border-0 p-0 h1 mb-0">
-								<div class="px-3 py-3">
+								<div class="px-3 py-2"></div>
+              <!--
 									<a class="text-color16 h1 mb-0" href="<?php echo $upload_dir ['baseurl'] ; ?>/data/<?php echo trim($indicator['PDF']); ?>.pdf" target="_blank" rel="noopener"><span class="sm5 d-block f-10">Download SANCHAR Brief PDFs</span></a>
-								</div>
+              -->
 								<ul class="nav justify-content-between py-2 bg-color10 nav-fill d-flex flex-row">
-									<li class="nav-item text-center"><a class="text-center sm5 nav-link py-1 download-data cursor-pointer px-md-0" data-qid="<?php echo $indicator['QID']?>" data-datset="<?php echo $indicator['DataSet']?>" data-variablename="<?php echo $indicator['Variable Name']?>"> <img src="<?php echo get_template_directory_uri() ?>/images/download.svg"
-											alt="open-in-new-arrow" class="d-block mx-auto"><span class="d-block pt-1 text-color6 f-10">DOWNLOAD</span>
+                <!--
+                  Remove this old link that downloads a CSV of data. This can be done on Visualization component
+
+									<li class="nav-item text-center"><a class="text-center sm5 nav-link py-1 download-data cursor-pointer px-md-0" data-qid="<?php //echo $indicator['QID']?>" data-datset="<?php //echo $indicator['DataSet']?>" data-variablename="<?php //echo $indicator['Variable Name']?>"> <img src="<?php //echo get_template_directory_uri() ?>/images/download.svg"
+                -->
+									<li class="nav-item text-center">
+                    <a class="text-center sm5 nav-link py-1 download-data cursor-pointer px-md-0" target="_blank" rel="noopener noreferrer" href="<?php echo $upload_dir ['baseurl'] ; ?>/data/<?php echo trim($indicator['PDF']); ?>.pdf">
+                      <img src="<?php echo get_template_directory_uri() ?>/images/download.svg" alt="open-in-new-arrow" class="d-block mx-auto"><span class="d-block pt-1 text-color6 f-10" />DOWNLOAD BRIEF</span>
+                    </a>
+                  </li>
+                <!--
+                  Remove "view" button because this data is available within visualization component and not needed here
+
+                  <li class="nav-item text-center"><a class="text-center sm5 nav-link border-right border-left  py-1 view-data cursor-pointer px-md-0" data-qid="<?php //echo $indicator['QID']?>" data-datset="<?php //echo $indicator['DataSet']?>" data-variablename="<?php //echo $indicator['Variable Name']?>" > <img
+											src="<?php //echo get_template_directory_uri() ?>/images/view.svg" alt="open-in-new-arrow" class="d-block mx-auto"><span class="d-block pt-1 text-color6 f-10">VIEW</span>
 									</a></li>
-									<li class="nav-item text-center"><a class="text-center sm5 nav-link border-right border-left  py-1 view-data cursor-pointer px-md-0" data-qid="<?php echo $indicator['QID']?>" data-datset="<?php echo $indicator['DataSet']?>" data-variablename="<?php echo $indicator['Variable Name']?>" > <img
-											src="<?php echo get_template_directory_uri() ?>/images/view.svg" alt="open-in-new-arrow" class="d-block mx-auto"><span class="d-block pt-1 text-color6 f-10">VIEW</span>
-									</a></li>
+                -->
 									<li class="nav-item text-center"><a class="text-center sm5  nav-link  py-1 cursor-pointer px-md-0"
-										href="https://projectsanchar.org/odp/?tab=chart&chart=india_map&qid=<?php echo $indicator['QID']?>&dataset=<?php echo $indicator['DataSet']?>&program_area=<?php echo $indicator['selected_area']?>" target="_blank" rel="noopener"> <img
+										href="https://projectsanchar.org/odp/?tab=chart&chart=india_map&qid=<?php echo $indicator['QID']?>&dataset=<?php echo $indicator['DataSet']?>&program_area=<?php echo $indicator['Area']?>" target="_blank" rel="noopener"> <img
 											src="<?php echo get_template_directory_uri() ?>/images/visualisation.svg" alt="open-in-new-arrow" class="d-block mx-auto"><span class="d-block pt-1 text-color6 f-10">VISUALISATION</span>
 									</a></li>
 								</ul>
