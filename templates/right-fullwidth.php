@@ -78,6 +78,14 @@ while ( have_posts () ) :
 					</div>
 				</div>
 				<div class="px-xl-5 px-3">
+  <div class="px-1 px-md-5 pt-4">
+    <?php 
+      // This fragment is to get the WordPress body content into this page
+      $post = get_post($pid);
+      $post_body = $post->post_content;
+      echo apply_filters( 'the_content', get_post_field('post_content', $paged->ID) );
+    ?>
+  </div>
   <div class="no-sanchar-data-available d-none font-chivo font-weight-bold display-3 px-5">
     <span class="sm5 d-block">No Data Available</span>
   </div>
