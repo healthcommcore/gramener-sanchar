@@ -9,6 +9,9 @@
 					if ($categoryterm != "") {
 						if ($categoryname == "About") {
 							include (locate_template ( 'templates/pageabout.php', false, false ));
+            }
+						else if ($categoryname == "About Hindi") {
+							include (locate_template ( 'templates/pageabouthindi.php', false, false ));
 						} else {
 							include (locate_template ( 'templates/page2column.php', false, false ));
 						}

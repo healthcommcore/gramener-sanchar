@@ -35,7 +35,7 @@
             $mainlogo = esc_url ( $logo [0] );
           }
           ?>
-            <a href="."> <img src="<?php echo $mainlogo; ?>" alt="logo" class="img-fluid d-none d-md-block"> <img src="<?php echo $mainlogo; ?>" alt="Project Sanchar logo" class="img-fluid d-md-none">
+            <a href="/"> <img src="<?php echo $mainlogo; ?>" alt="logo" class="img-fluid d-none d-md-block"> <img src="<?php echo $mainlogo; ?>" alt="Project Sanchar logo" class="img-fluid d-md-none">
             </a>
           </figure>
         </div>
