@@ -78,11 +78,48 @@
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145103114-1"></script>
 		<script>
+// This script for tracking cut/copy/paste in Google Analytics is provided as it is, and was put together by Eivind Savio January 2013. Happy tracking!
+// Script from Motyar
+  function getSelected() {
+    if(window.getSelection) {return window.getSelection();}
+      else if(document.getSelection) {return document.getSelection();}
+    else {
+    var selection = document.selection && document.selection.createRange();
+    if(selection.text) { return selection.text; }
+    return false;
+    }
+  return false;
+  }
+// End script from Motyar
+
     /* global dataLayer */
     window.dataLayer = window.dataLayer || []
     function gtag(){dataLayer.push(arguments)}
     gtag('js', new Date())
     gtag('config', 'UA-145103114-1')
+// Cut/copy/paste main script
+  jQuery(document).ready(function() {
+    jQuery('body').on('copy cut paste', function(ccp) { // Track cut, copy or paste with jQuery.
+    var selection = getSelected();
+    var maxLength = 150; // Up to 150 Characters from your text will be tracked. Change this number if you want to track more or less text.
+      if(selection && (selection = new String(selection).replace(/^\s+|\s+$/g,''))) {
+      var textLength = selection.length; // How many characters was copied/cutted/pasted.
+        if (selection.length > maxLength) {
+          selection = selection.substr(0, maxLength) + "..."} // If the text is longer than maxLength, add ... to the end of the text
+        else { 
+          selection = selection; // If the text is shorter than maxLength, just track the text as it is.
+        }
+// I'm using the event's value in the "action" param to make it quicker/easier to find in GA
+    gtag('event', selection, { 'event_category' : 'Cut/copy/paste' }); 
+// Track copied/cutted/pasted data in Google Analytics as Events
+      }
+    });// body.on
+  }); //document.ready
+
   </script>
+<script>
+
+</script>
+
 	</header>
 	<!-- TODO: Filter bars -->
