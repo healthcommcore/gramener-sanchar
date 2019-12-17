@@ -205,6 +205,9 @@ function get_curldata_healththemes() {
     $output .= '</div>';
     $detailslink = get_permalink(251);
     foreach ( $curldata [0] as $healthcard ) {
+        if( count($healthcard) != 4 ) {
+          $healthcard[] = "Nutrition";
+        }
         $output .= '<div class="row">';
         foreach ( $healthcard as $hcard ) {
             $appender = "?";
@@ -216,7 +219,7 @@ function get_curldata_healththemes() {
             $imgname = str_replace ( ' ', '_', strtolower ( $hcard ) );
             $imgurl = wp_get_attachment_by_post_name ( $imgname );
             $relative_url = str_replace('http://localhost/sanchar', '', $imgurl->guid);
-            $output .= '<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pb-3 pr-xl-1 selected_program cursor-pointer" data-area-name="' . $hcard . '">';
+            $output .= '<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 pb-3 pr-xl-1 selected_program cursor-pointer" data-area-name="' . $hcard . '">';
             $output .= '<a href="'.$pdetailslink.'""><div class="card p-1 border-0 shadow h-100">';
             $output .= '<img src="' . $relative_url . '" class="card-img-top" alt="' . $imgname . '">';
             $output .= '<div class="card-body px-3 py-2">';
