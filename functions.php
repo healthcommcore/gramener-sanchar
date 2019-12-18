@@ -453,7 +453,6 @@ function figure_chart() {
         $output .= '<div class="card-header bg-transparent border-0 px-3 py-0">';
         $output .= ' <figure class="mb-0">';
         $output .= ' <img src="' . $thumb[0].'" class="card-img-top" alt="child-health">';
-        $output .= '<figcaption class="round bg-primary px-3 mt-3 ml-3 text-white h3 mb-0 pos-tl py-1"><span class="sm3 d-block f-14">'.$catname.'</span></figcaption>';
         $output .= '</figure>';
         $output .= '</div>';
         $output .= '<div class="card-body p-0 m-0">';

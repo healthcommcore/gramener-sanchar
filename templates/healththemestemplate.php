@@ -4,8 +4,10 @@
  */
 ?> 
 <?php
-get_header ();
-	?>
+  get_header ();
+  while ( have_posts () ) :
+    the_post();
+?>
 <main class="two border-bottom data_portal-no vh-100 overflow-auto " style="padding-top: 110px;">
 <div class="d-xl-flex position-relative h-100">
 <div class="  left-panel bg-color4  navbar-nav-scroll col-md-3 px-0 ml-lg-0 col-lg-3 overflow-auto" style="padding-top: 110px;">
@@ -79,24 +81,9 @@ get_header ();
 <!--flex-->
 </div>
 </main>
-<div class="modal fade health_data_view_height" id="health_data_view_modal" tabindex="-1" role="dialog" aria-labelledby="health_data_view_modal_title" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="health_data_view_modal_title"></h5>
-				<button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<div class="map-formhandler-table table-responsive"></div>
-			</div>
-		</div>
-	</div>
-</div>
-
 
 <?php
+endwhile;
 get_footer ();
 ?>
 
