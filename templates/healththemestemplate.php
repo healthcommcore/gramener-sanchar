@@ -63,13 +63,28 @@
 				<!--fixed end-->
 			</div>
 
+      <div class="px-xl-5 px-3">
+        <div class="px-1 px-md-5 pt-4">
+          <div id="sanchar-briefs-menu" class="pt-2 pb-5 sanchar-briefs-menu">
+            <ul class="nav">
+              <?php
+              if (has_nav_menu ( 'sanchar-briefs-menu' )) {
+                echo wp_nav_menu ( array (
+                    'theme_location' => 'sanchar-briefs-menu',
+                    'container' => false,
+                    'menu_class' => 'navbar-nav nav-item',
+                    'fallback_cb' => '__return_false',
+                    'items_wrap' => '%3$s',
+                    'depth' => 0
+                ) );
+              }
+              ?>
+            </ul>
+          </div>
 					
-					
-          <div class="px-xl-5 px-3">
-            <div class="px-1 px-md-5 pt-4">
-              <?php echo the_content(); ?>
-            </div>
-					</div>
+          <?php echo the_content(); ?>
+        </div>
+      </div>
 
 <!--header-->
 				</div>

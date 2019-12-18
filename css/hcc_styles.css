@@ -60,3 +60,21 @@ li.active.nav-item > .dropdown-item {
 .backlink {
   font-size: 0.8em;
 }
+
+.sanchar-briefs-menu a {
+  font-weight: bold;
+  color: #a11c2f;
+  padding: 0.3em 1.0em;
+  margin-right: 1.0em;
+  border: #a11c2f 1px solid;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.sanchar-briefs-menu a:hover,
+.sanchar-briefs-menu a:focus,
+.sanchar-briefs-menu a:active,
+.sanchar-briefs-menu .current-menu-item a {
+  background-color: #a11c2f;
+  color: #fff;
+}
