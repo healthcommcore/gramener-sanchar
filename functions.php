@@ -14,6 +14,7 @@ wp_enqueue_style('hcc_styles', get_template_directory_uri() . '/css/hcc_styles.c
 function initializetheme() {
     register_taxonomy_for_object_type ( 'category', 'page' );
     register_nav_menu ( 'header-menu', __ ( 'Header Menu' ) );
+    register_nav_menu ( 'sanchar-briefs-menu', __ ( 'SANCHAR briefs Menu' ) );
     create_taxonomies();
     create_customposts ();
 }
@@ -215,8 +216,10 @@ function get_curldata_healththemes() {
                 $appender = "&";
             }
             
-            $pdetailslink = $detailslink.$appender."indicator=".$hcard;
+            //$pdetailslink = $detailslink.$appender."indicator=".$hcard;
+            $pathname = str_replace ( ' ', '-', strtolower ( $hcard ) );
             $imgname = str_replace ( ' ', '_', strtolower ( $hcard ) );
+            $pdetailslink = "/sanchar-briefs/" . $pathname;
             $imgurl = wp_get_attachment_by_post_name ( $imgname );
             $relative_url = str_replace('http://localhost/sanchar', '', $imgurl->guid);
             $output .= '<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 pb-3 pr-xl-1 selected_program cursor-pointer" data-area-name="' . $hcard . '">';

@@ -52,3 +52,11 @@ li.active.nav-item > .dropdown-item {
 .get-in-touch-heading {
   font-size: 1.2em;
 }
+
+.data_portal_slider .carousel-control-prev {
+  left: -10px;
+}
+
+.backlink {
+  font-size: 0.8em;
+}

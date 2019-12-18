@@ -7,6 +7,10 @@
   get_header ();
   while ( have_posts () ) :
     the_post();
+    $pid = 33;
+    $category = get_the_category ( $pid );
+    $categoryterm = "4";
+    $categoryname = "Health Themes";
 ?>
 <main class="two border-bottom data_portal-no vh-100 overflow-auto " style="padding-top: 110px;">
 <div class="d-xl-flex position-relative h-100">
@@ -14,14 +18,13 @@
 		<!-- add the extra class in the ul -->
 		<ul class="nav-pills theme-pills ml-md-auto ml-lg-auto font-chivo py-md-4 nav d-md-flex flex-md-column py-0 mx-0 flex-nowrap align-items-end col-9 pr-0 col-md-12 col-lg-8 page-top">
 			<?php
-	$categoryname = "Health Themes";
 	$args = array (
 			'post_type' => 'page',
 			'order' => 'ASC',
 			'category' => $categoryterm 
 	);
 	$menulist = get_posts ( $args );
-	$backlink = "/health-themes";
+	$backlink = "/sanchar-briefs";
 	foreach ( $menulist as $menu ) {
 		$link = get_permalink ( $menu );
 		$active = ($pid == $menu->ID) ? "active" : "";
@@ -44,13 +47,14 @@
 								<img src="<?php echo get_template_directory_uri() ?>/images/slider_maternal_health.png" class="d-lg-block d-md-block d-none w-100" alt="carousel-1"> <img src="<?php echo get_template_directory_uri() ?>/images/mob_slider_.png" class="d-block d-md-none d-lg-none w-100" alt="carousel-1">
 							</div>
 							<div class="carousel-caption px-4 text-left  font-weight-bold px-md-5 px-lg-5">
-								<div class="d-md-flex justify-content-between align-items-center pb-3 pb-lg-4 pb-md-0 flex-row row px-lg-5">
-									<div class="d-flex align-items-center text-white pt-2 pt-md-0 col-5 col-md-5 col-lg-6 pr-md-0 px-lg-4">
+								<div class="pb-2 py-lg-2 pb-md-0 px-lg-5">
+									<div class="d-flex align-items-center text-white pt-2 pt-md-0 col-5 col-md-5 col-lg-6 pr-md-0">
 										<a class="carousel-control-prev position-relative w-auto ml-n3 opacity-90 back-to-health-themes cursor-pointer" href="<?php echo $backlink;?>"><img src="<?php echo get_template_directory_uri() ?>/images/back-button.svg" alt="back-button"></a>
-										<div class="ml-2 ml-md-0">
-											<h2 class="mb-0 font-chivo font-weight-bold slider_title d-none d-md-block"><?php echo the_title(); ?></h2>
-										</div>
+                    <a class="d-block text-white backlink" href="<?php echo $backlink;?>">Back to SANCHAR briefs</a>
 									</div>
+                  <div class="ml-3 mt-2 ml-md-0">
+                    <h2 class="mb-0 font-chivo font-weight-bold slider_title d-md-block"><?php echo the_title(); ?></h2>
+										</div>
 							</div>
 						</div>
 					</div>
@@ -61,15 +65,12 @@
 
 					
 					
-					<div class="col-12">
-            <div class="px-md-5 bg-color5">
-              <div class="px-4 px-md-5 pb-5 mb-5">
+          <div class="px-xl-5 px-3">
+            <div class="px-1 px-md-5 pt-4">
               <?php echo the_content(); ?>
-              </div>
             </div>
-
-<!--col 12-->
 					</div>
+
 <!--header-->
 				</div>
 <!--data portal slider-->
