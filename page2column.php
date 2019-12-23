@@ -34,7 +34,7 @@
 																			the_post_thumbnail ();
 																			echo '</figure>';
 																		}
-																		?>
+                    ?>
 						
 						
 						<?php echo the_content(); 

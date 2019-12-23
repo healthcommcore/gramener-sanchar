@@ -61,16 +61,31 @@ li.active.nav-item > .dropdown-item {
   font-size: 0.8em;
 }
 
+.call-to-action a {
+  display: inline-block;
+  padding: 0.4em 2.4em 0.5em 1.2em;
+  margin-top: 0.4em;
+  font-size: 1.0em;
+  background-image: url('../images/arrow.png');
+  background-repeat: no-repeat;
+  background-position: 96% 50%;
+}
+
 .sanchar-briefs-menu a {
-  font-weight: bold;
-  color: #a11c2f;
   padding: 0.3em 1.0em;
   margin-right: 1.0em;
   border: #a11c2f 1px solid;
   border-radius: 50px;
+}
+
+.call-to-action a,
+.sanchar-briefs-menu a {
+  font-weight: bold;
+  color: #a11c2f;
   text-decoration: none;
 }
 
+.call-to-action a,
 .sanchar-briefs-menu a:hover,
 .sanchar-briefs-menu a:focus,
 .sanchar-briefs-menu a:active,

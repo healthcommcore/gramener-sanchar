@@ -24,12 +24,11 @@ get_header ();
 		</div>
 		
 <!-- Home signup -->	
-		<div class="bg-3 mb-5 px-3 p-md-4 border-custom rounded mt-5">
-				<?php  //dynamic_sidebar('Social Widget') ; ?>
-				<a class="signup-link text-decoration-none" href="/contact-us">
-					<?php  dynamic_sidebar('Home Signup') ; ?>
-				</a>
+  <div class="row">
+		<div class="call-to-action col-md-4 my-3">
+        <?php  dynamic_sidebar('Home Signup') ; ?>
 		</div>
+  </div>
 
 <!-- end row -->
 	</div>

@@ -252,10 +252,9 @@ add_theme_support ( 'custom-logo', array (
 ) );
 add_theme_support ( 'post-thumbnails' );
 function visualization_portal() {
-    $output .= '<div class=" ">';
+    $output .= '<div class="">';
     
     // Visualization Wrapper
-    $output .= dynamic_sidebar ( 'Visualization Wrapper' );
    /*  $output .= '<a class="nav-item text-decoration-none" href="https://projectsanchar.org/odp/?tab=chart" target="_blank" rel="noopener">';
     $output .= '<div class="bg-white px-4 pb-4 pt-3 d-flex  justify-content-md-between align-items-center border-custom rounded-sm">';
     $output .= '<div class="">';

@@ -12,6 +12,8 @@
             }
 						else if ($categoryname == "About Hindi") {
 							include (locate_template ( 'templates/pageabouthindi.php', false, false ));
+						} else if (get_the_title() == "Visualization Portal") {
+							include (locate_template ( 'templates/page2column.php', false, false ));
 						} else {
 							include (locate_template ( 'templates/page2column.php', false, false ));
 						}

@@ -37,22 +37,23 @@ if (function_exists ( 'register_sidebar' )) {
         'after_title' => ''
     ) );
     register_sidebar ( array (
-        'name' => 'Visualization Wrapper',
-        'id' => 'visualization-wrapper',
-        'description' => 'Visualization Widget Area',
-        'before_widget' => '<div class="bg-white px-4 pb-4 pt-3 d-flex  justify-content-md-between align-items-center border-custom rounded-sm">',
+        'name' => 'Visualization action',
+        'id' => 'visualization-action',
+        'description' => 'Title and button to go to visualization portal',
+        'before_widget' => '<div class="bg-white px-4 pb-4 pt-3">',
         'after_widget' => '</div>',
-        'before_title' => '',
-        'after_title' => ''
+        'before_title' => '<h5 class="mb-3">',
+        'after_title' => '</h5>'
     ) );
+
     register_sidebar ( array (
         'name' => 'Home Signup',
         'id' => 'home-signup',
         'description' => 'Signup Widget Area',
-        'before_widget' => '<div class="justify-content-between align-items-center px-xl-3 py-xl-2">',
+        'before_widget' => '<div class="bg-white px-4 pb-4 pt-3">',
         'after_widget' => '</div>',
-        'before_title' => '<h3 class="text-danger font-chivo">',
-        'after_title' => '</h3>'
+        'before_title' => '<h5 class="mb-3">',
+        'after_title' => '</h5>'
     ) );
     register_sidebar ( array (
         'name' => 'Footer Text',

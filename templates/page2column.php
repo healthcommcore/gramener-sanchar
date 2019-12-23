@@ -35,7 +35,15 @@
 																			echo '</figure>';
 																		}
 																		?>
-						
+
+							<?php if(trim(get_the_title()) == "Visualization Portal") : ?>
+              <div class="row">
+                <div class="call-to-action col-md-5 mt-3 mb-4">
+                  <?php  dynamic_sidebar('Visualization action') ; ?>
+                </div>
+              </div>
+            <?php endif; ?>
+					
 						
 						<?php echo the_content(); 
 						
