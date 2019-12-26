@@ -102,4 +102,5 @@
 endwhile;
 get_footer ();
 ?>
+<script src="<?php echo get_template_directory_uri() ?>/js/data_portal.js"></script>
 

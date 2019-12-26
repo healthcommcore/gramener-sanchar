@@ -31,9 +31,7 @@
 <script src="<?php echo get_template_directory_uri() ?>/js/noty.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/sticky-header.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/helper.js"></script>
-<script src="<?php echo get_template_directory_uri() ?>/js/data_portal.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/common.js"></script>
 <?php wp_footer();?>
-
 </body>
 </html>
