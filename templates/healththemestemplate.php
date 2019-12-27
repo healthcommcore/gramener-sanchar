@@ -65,7 +65,7 @@
 
       <div class="px-xl-5 px-3">
         <div class="px-1 px-md-5 pt-4">
-          <div id="sanchar-briefs-menu" class="pt-2 pb-5 sanchar-briefs-menu">
+          <div id="sanchar-briefs-menu" class="pt-2 pb-4 sanchar-briefs-menu">
             <ul class="nav">
               <?php
               if (has_nav_menu ( 'sanchar-briefs-menu' )) {
