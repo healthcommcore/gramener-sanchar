@@ -4,10 +4,10 @@ if (function_exists ( 'register_sidebar' )) {
         'name' => 'Home Widgets',
         'id' => 'home-widgets',
         'description' => 'Widget Area',
-        'before_widget' => '<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4 mb-md-0 px-0 px-md-3 pl-md-3"><div class="card h-100 px-md-4 px-3 py-4  shadow-sm border-color3 border-radius"><div class="card-title px-xl-3 mb-0 pb-3 pt-2">',
-        'after_widget' => '<h5></div></div></div>',
-        'before_title' => '<h2 class="mb-0 font-weight-bold text-center font-chivo  text-color6 f-22">',
-        'after_title' => '</h2></div><div class="card-body p-0 px-xl-3 py-xl-0"><h5 class="mb-0 pb-2 lh-1  text-color6 f-16">'
+        'before_widget' => '<div class="card border-muted rounded-0">',
+        'after_widget' => '</div></div></div>',
+        'before_title' => '<div class="card-header bg-transparent border-warning rounded-0"><h4 class="card-title">',
+        'after_title' => '</h4></div><div class="card-body"><div class="card-text">'
     ) );
     register_sidebar ( array (
         'name' => 'Social Widget',

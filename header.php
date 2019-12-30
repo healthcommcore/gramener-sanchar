@@ -54,7 +54,8 @@
 					</div>
 				</div>
 				<div class="flex-grow-1 text-center">
-					<p class="mb-0 font-weight-bold font-chivo text-danger text-capitalize f-18"><?php the_title();?></p>
+					<!--<p class="mb-0 font-weight-bold font-chivo text-danger text-capitalize f-18"><?php //the_title();?></p>-->
+					<p class="mb-0 font-weight-bold font-chivo text-danger text-capitalize f-18">Main menu</p>
 				</div>
 			</div>
 			<div id="mySidenav" class="sidenav display-3 mb-0">

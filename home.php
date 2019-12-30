@@ -10,7 +10,7 @@ get_header ();
 		</div>
  
 	
-<div class="container py-2 py-md-5 py-lg-5">
+<div class="container py-2 py-md-5 py-lg-4">
 <!-- Home text -->	
 		<div class="row py-4">
 			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -19,7 +19,7 @@ get_header ();
 		</div>
 
 <!-- Home widgets -->	
-		<div class="row">
+		<div class="card-deck mb-4">
 			<?php  dynamic_sidebar('Home Widgets') ; ?>
 		</div>
 		

@@ -97,3 +97,26 @@ li.active.nav-item > .dropdown-item {
   background-color: #a11c2f;
   color: #fff;
 }
+
+.btn-primary {
+  background-color: #1563b7;
+  border-color: #1563b7;
+}
+
+.card-deck .card-title,
+.card-deck h4 {
+  margin-bottom: 0;
+}
+
+.card-deck .card {
+  font-size: 1.15em;
+}
+
+@media (min-width: 576px) and (max-width: 799px) {
+  .card-deck .card {
+    position: relative;
+    flex: initial;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
