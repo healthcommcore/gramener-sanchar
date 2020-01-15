@@ -220,7 +220,6 @@ function get_curldata_healththemes() {
             $imgname = str_replace ( ' ', '_', strtolower ( $hcard ) );
             $pdetailslink = "/sanchar-briefs/" . $pathname;
             $imgurl = wp_get_attachment_by_post_name ( $imgname );
-            //print_r($imgurl);
             $relative_url = str_replace('http://localhost/sanchar', '', $imgurl->guid);
             $output .= '<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 pb-3 pr-xl-1 selected_program cursor-pointer" data-area-name="' . $hcard . '">';
             $output .= '<a href="'.$pdetailslink.'""><div class="card p-1 border-0 shadow h-100">';
