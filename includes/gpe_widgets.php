@@ -1,6 +1,15 @@
 <?php
 if (function_exists ( 'register_sidebar' )) {
     register_sidebar ( array (
+        'name' => 'Banner Widgets',
+        'id' => 'banner-widgets',
+        'description' => 'Widget Area',
+        'before_widget' => '<div class="banner-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => ''
+    ) );
+    register_sidebar ( array (
         'name' => 'Home Widgets',
         'id' => 'home-widgets',
         'description' => 'Widget Area',

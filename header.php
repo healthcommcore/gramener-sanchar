@@ -25,7 +25,7 @@
 		<div class="container px-md-3 px-0 py-2">
       <div class="row">
         <div class="col-md-4">
-          <figure class=" mb-0 d-block">
+          <figure class=" mt-3 d-block">
           <?php
           $custom_logo_id = get_theme_mod ( 'custom_logo' );
           $logo = wp_get_attachment_image_src ( $custom_logo_id, 'full' );
@@ -40,9 +40,12 @@
           </figure>
         </div>
         <div class="col-md-3 offset-md-5">
+				<?php dynamic_sidebar('Banner Widgets'); ?>
+          <!--
           <a class="india-center-logo float-right" href="https://www.hsph.harvard.edu/india-center/" target="_blank" rel="noopener noreferrer">
-            <img src="<?php echo $india_center_logo; ?>" alt="Harvard TH Chan India Center logo" class="img-fluid" />
+            <img src="<?php //echo $india_center_logo; ?>" alt="Harvard TH Chan India Center logo" class="img-fluid" />
           </a>
+          -->
         </div>
       </div>
 		</div>

@@ -629,42 +629,37 @@ text-decoration: none;
 background-color: transparent;
 font-size: 24px;
 }
-/* inner pages appling styles for side menu 
-.page-top {
-	padding-top: 47px !important;
+
+.banner-widget {
+  text-align: right;
 }
 
-/* active menu item 
-.menu-item.current-menu-item a {
-	color: #A11C2F !important;
-	opacity: 1;
+#india-center-logo img {
+  max-width: 100%;
+  height: auto;
 }
 
-/* .nav-link.px-3 {
-	padding: 2px !important;
-}
-#menu-item-12 a :active {
-	color: red !important;
-}
-.menu-item.current-menu-item  menu-item-type-taxonomy a  {
-	color: #A11C2F !important;
-	opacity: 1;
+.english-hindi {
+  margin: 8px 0;
 }
 
-
-#v-pills-tab {
-	padding-top: 48px !important;
+.english-hindi,
+.english-hindi a {
+  color: #fff;
 }
- */
-/* .bg-white.py-4.w-100.box-1 {
-	position: absolute;
-	top: initial !important;
-	//bottom: initial !important;
-	top: 100%;
-	bottom: 100% !important;
-	 z-index: 66;
-} */
-/* .col-12.col-sm-12.col-md-4.col-lg-4.col-xl-4.pb-3.pr-xl-1 {
-	display: inline-block;
-	padding: 0px;
-} */
+
+.english-hindi a {
+  text-decoration: underline;
+}
+
+.english-hindi a:hover,
+.english-hindi a:focus,
+.english-hindi a:active {
+  color: #D5707E;
+}
+
+@media (max-width: 768px) {
+  .banner-widget {
+    text-align: center;
+  }
+}
