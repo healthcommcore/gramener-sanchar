@@ -23,24 +23,15 @@
           </div>
         </div>
        <div class=" bg-white min-vh-90 px-3 px-md-5 pt-4 mb-0 mb-md-0 col-lg-7 text-color9 mb-3">
-       	<div class="response-frm-submit" style ="position: absolute; left:0px; right:0px; top:0px; bottom:0px; background-color:rgba(255,255,255,0.95);z-index:9999; padding:20px;display:none;">
-        		<div class="close-frm" style="text-align:right;"><a href="#">X</a></div>
-        		<h3 class="font-chivo font-weight-bold text-center">Thank you for signing up.
-                <a href="javascript:void(0)">
-                  <figure class="mb-0 pt-4"><img src="<?php echo get_template_directory_uri() ?>/images/check.svg" alt="check" style="width:60px; height: auto;"></figure>
-                </a></h3>
-        	</div>
-          <div class="card h-100 px-lg-5 border-0">
-            <div class="card border-0 bg-transparent pb-md-5 pb-4 h-25">
-              <h3 class="font-weight-bold mb-md-1 mb-2 font-chivo f-22">
-                <?php echo the_title(); ?>
-              </h3>
-              <div class="content">
-                <?php the_content(); ?>
-              </div>
-            </div>
+        <div class="items-full pt-0 pt-md-4">
+           <h3 class="font-weight-bold mb-md-1 mb-2 font-chivo f-22">
+            <?php echo the_title(); ?>
+          </h3>
+          <div class="content">
+            <?php the_content(); ?>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </main>
