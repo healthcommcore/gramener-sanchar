@@ -17,7 +17,7 @@
 						} else {
 							include (locate_template ( 'templates/page2column.php', false, false ));
 						}
-					} else if (get_the_title () == "Contact Us") {
+					} else if (get_the_title () == "Sign Up") {
 						include (locate_template ( 'templates/pagecontact.php', false, false ));
 					} else {
 						//include (locate_template ( 'templates/page1column.php', false, false ));

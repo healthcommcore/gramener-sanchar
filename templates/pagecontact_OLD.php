@@ -32,15 +32,29 @@
         	</div>
           <div class="card h-100 px-lg-5 border-0">
             <div class="card border-0 bg-transparent pb-md-5 pb-4 h-25">
-              <h3 class="font-weight-bold mb-md-1 mb-2 font-chivo f-22">
-                <?php echo the_title(); ?>
-              </h3>
-              <div class="content">
-                <?php the_content(); ?>
+              <h3 class="font-weight-bold mb-md-1 mb-2 font-chivo f-22">Sign Up </h3>
+              <h3 class="mb-0"><span class="sm3 d-block f-14">Get updates on new datasets and new visuals from
+                  SANCHAR</span></h3>
+            </div>
+            <div class="h-75 d-flex flex-column align-items-center w-100 contact_form">
+              <div class="form-group pb-md-3 pb-3 w-100 text-color9">
+                <label for="user_name" class="h3 mb-0 pb-3"><span class="sm3 d-block f-14">NAME</span></label>
+                <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0" id="user_name" aria-describedby="emailHelp" placeholder="Enter Name" required="">
               </div>
+              <div class="form-group   w-100 mb-1">
+                <label for="user_email" class="h3 mb-0 pb-3"><span class="sm3 d-block f-14">EMAIL</span></label>
+                <input type="email" class="form-control border-top-0 border-left-0 border-right-0 rounded-0" id="user_email" placeholder="Enter Email" required="">
+              </div>
+              <div class="error pb-md-5 pb-3 text-color13 text-left w-100 font-chivo font-weight-bold invisible">*
+                Invalid email address. Please try again</div>
+              <div class="form-group form-check text-center pl-0  w-100">
+                <button type="submit" class="submit-btn btn border border-color9 border-2 font-chivo font-weight-bold round mx-auto  col-6 col-sm-6 col-md-8 col-lg-6 col-xl-4 py-2 bg-white">SIGN
+                  UP</button>
+              </div>
+              
             </div>
           </div>
         </div>
       </div>
     </div>
-</main>
+    </main>
