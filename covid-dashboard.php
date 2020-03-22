@@ -74,7 +74,7 @@
     color: #fff;
   }
 </style>
-<div class="dashboard-container mt-5 mb-3">
+<div class="dashboard-container mt-5 mb-3 pb-5">
   <h1 class="dashboard-header py-2">COVID-19 Dashboard</h1>
   <div class="container">
     <div class="intro-paragraph p-3 my-3">
