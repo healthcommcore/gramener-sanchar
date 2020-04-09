@@ -30,25 +30,34 @@
 			"endpoint" => "/social-media-tips"
 		),
 		array(
-			"title" => "Resources",
-			"text" => "Reliable sources for information on COVID-19",
-			"link_text" => "Go to Resources",
-			"endpoint" => "/resources-covid19"
-		),
-		array(
 			"title" => "Data Spotlight",
 			"text" => "Latest numbers on COVID-19 cases around the world",
 			"link_text" => "Go to Data Spotlight",
 			"endpoint" => "/data-spotlight"
+		),
+		array(
+			"title" => "Health & Well-being",
+			"text" => "Tips to manage stress and promote mental, physical, and social well-being",
+			"link_text" => "Go to Health & Well-being",
+			"endpoint" => "/health-and-well-being"
+		),
+		array(
+			"title" => "Tobacco Control",
+			"text" => "Tips for smokers and tobacco users",
+			"link_text" => "Go to Tobacco control",
+			"endpoint" => "/tobacco-tips"
+		),
+		array(
+			"title" => "Resources",
+			"text" => "Reliable sources for information on COVID-19",
+			"link_text" => "Go to Resources",
+			"endpoint" => "/resources-covid19"
 		)
 	];
 ?>
 <style>
   .dashboard-container {
     background: #FCF6EC;
-  }
-  .dashboard-container .container {
-    max-width: 1140px !important;
   }
   .dashboard-header {
     background: #F5A628;
@@ -74,7 +83,7 @@
     color: #fff;
   }
 </style>
-<div class="dashboard-container mt-5 mb-3 pb-5">
+<div class="dashboard-container">
   <h1 class="dashboard-header py-2">COVID-19 Dashboard</h1>
   <div class="container">
     <div class="intro-paragraph p-3 my-3">
