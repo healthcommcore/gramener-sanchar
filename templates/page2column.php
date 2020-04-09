@@ -7,6 +7,7 @@
 			$args = array (
 					'post_type' => 'page',
 					'order' => 'ASC',
+          'numberposts' => 80,
 					'category' => $categoryterm 
 			);
 			$menulist = get_posts ( $args );
@@ -18,7 +19,6 @@
 				echo '<span class="opacity-50 f-14">' . $menu->post_title . '</span></a></li>';
 			}
 			?>
-		
 		</ul>
 		
 	</div>
