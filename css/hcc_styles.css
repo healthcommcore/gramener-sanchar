@@ -1,0 +1,144 @@
+/** 
+ * HCC styles
+ *
+ * 11/14/19
+ */
+
+.india-center-logo {
+  display: block;
+  width: 80%;
+}
+
+.main-menu-color {
+  color: #666;
+}
+
+.main-menu-color:hover {
+  color: #A11C2F;
+}
+
+/*
+#nav .dropdown .show > li.dropdown-menu {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0 !important;
+}
+
+#nav .dropdown .show > li.shadow-sm {
+  box-shadow: none !important;
+}
+
+#nav .dropdown .show > li.mt-2 {
+  margin-top: 0 !important;
+}
+
+#nav .dropdown .show > li.dropdown-menu a.sm5 {
+  font-size: 100% !important;
+}
+*/
+
+
+.dropdown-item:hover, 
+.dropdown-item:focus,
+li.active.nav-item > .dropdown-item {
+  background: #A11C2F;
+  color: #fff;
+}
+
+/** Homepage slider **/
+.owl-item h1 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.4em;
+  text-shadow: -2px 2px 4px #333;
+}
+
+.owl-item a {
+  background: #F5A623;
+  padding: 0.6em 1.3em;
+  display: inline-block;
+  color: #fff;
+}
+
+.signup-link {
+  display: block;
+  background: url("../images/arrow-link.svg") 100% 50% no-repeat;
+}
+
+.signup-link .textwidget p {
+  color: #777;
+  font-size: 1.2em;
+}
+
+.get-in-touch-heading {
+  font-size: 1.2em;
+}
+
+.data_portal_slider .carousel-control-prev {
+  left: -10px;
+}
+
+.backlink {
+  font-size: 0.8em;
+}
+
+.call-to-action a {
+  display: inline-block;
+  padding: 0.4em 2.4em 0.5em 1.2em;
+  margin-top: 0.4em;
+  font-size: 1.0em;
+  background-image: url('../images/arrow.png');
+  background-repeat: no-repeat;
+  background-position: 96% 50%;
+}
+
+.sanchar-briefs-menu li {
+  margin-bottom: 1.4em;
+}
+
+.sanchar-briefs-menu a {
+  padding: 0.3em 1.0em;
+  margin-right: 1.0em;
+  border: #a11c2f 1px solid;
+  border-radius: 50px;
+}
+
+.call-to-action a,
+.sanchar-briefs-menu a {
+  font-weight: bold;
+  color: #a11c2f;
+  text-decoration: none;
+}
+
+.call-to-action a,
+.sanchar-briefs-menu a:hover,
+.sanchar-briefs-menu a:focus,
+.sanchar-briefs-menu a:active,
+.sanchar-briefs-menu .current-menu-item a {
+  background-color: #a11c2f;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #1563b7;
+  border-color: #1563b7;
+}
+
+.card-deck .card-title,
+.card-deck h4 {
+  margin-bottom: 0;
+}
+
+.card-deck .card {
+  font-size: 1.15em;
+}
+
+@media (min-width: 576px) and (max-width: 799px) {
+  .card-deck .card {
+    position: relative;
+    flex: initial;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}

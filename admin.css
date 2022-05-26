@@ -1,0 +1,75 @@
+body{
+	background-color: #F8F7F2 !important;
+}
+#login{
+	width:100%;
+	padding:0px;
+}
+
+#login h1{
+	background-color:#A11C2F !important;
+	padding-top:10px;
+	height:60px;
+}
+
+.login h1 a{
+	background-image:url(images/logo.svg);
+	background-size: unset;
+width: auto;
+}
+.login form {
+	width: 500px;
+	margin: 0px auto;
+	margin-top: 8%;
+}
+.login form .input{
+	border:0px;
+	box-shadow: none;
+	border-bottom:1px solid #000;
+	background-color: transparent;
+	
+}
+.login #backtoblog a, .login #nav a {
+	text-decoration: none;
+	color: #555d66;
+	margin-left: 47%;
+}
+.wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large {
+	height: 39px;
+	line-height: 34px;
+	padding: 0 30px 9px;
+	font-family: "Chivo", sans-serif;
+	font-weight: 700 !important;
+	border-radius: 99rem;
+	border-width: 2px !important;
+	/* background-color: e; */
+}
+.wp-core-ui .button-primary{
+	background: none;
+	border-color: none;
+	 box-shadow: none;
+	color: #fff;
+	/* text-decoration: none; */
+	 text-shadow: none;
+}
+ .button, .wp-core-ui .button-secondary {
+	color: #000;
+	border-color: #ccc;
+	background: #fff;
+	/* box-shadow: 0 1px 0 #ccc; */
+	vertical-align: top;
+	border-color: #000 !important;
+}
+.wp-core-ui .button, .wp-core-ui .button-secondary {
+	color: #000;
+	border-color: #ccc;
+	/* background: #f7f7f7; */
+	/* box-shadow: none; */
+	vertical-align: top;
+}
+
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover {
+	background: #fff;
+	border-color: #000 !important;
+	color: #000;
+}
