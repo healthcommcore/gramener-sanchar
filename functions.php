@@ -295,6 +295,7 @@ function visualization_portal() {
     return $output;
 }
 function about_datasets() {
+    $output = '';
     $aboutargs = array (
         'post_type' => "aboutdatasets",
         'order' => 'ASC',
@@ -473,7 +474,7 @@ function figure_chart() {
 /* Actions ********************* */
 add_action ( 'init', 'initializetheme' );
 add_action ( 'add_meta_boxes', 'homeslide_metabox' );
-add_action ( 'save_post', 'homeslide_savemetabox' );
+//add_action ( 'save_post', 'homeslide_savemetabox' );
 add_action ( 'upload_mimes', 'add_file_types_to_uploads' );
 add_action ( 'widgets_init', function () {
     register_widget ( 'Social_Widget' );

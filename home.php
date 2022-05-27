@@ -9,7 +9,7 @@ get_header ();
 			<?php  dynamic_sidebar('Home carousel') ; ?>
 		</div>
  
-<?php get_template_part('covid', 'dashboard'); ?>
+<?php //get_template_part('covid', 'dashboard'); ?>
 	
 <div class="container py-2 py-md-5 py-lg-4">
 <!-- Home text -->	

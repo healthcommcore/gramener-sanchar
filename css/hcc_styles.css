@@ -134,6 +134,40 @@ li.active.nav-item > .dropdown-item {
   font-size: 1.15em;
 }
 
+/** Covid dashboard **/
+
+.dashboard-container {
+  background: #FCF6EC;
+}
+.dashboard-header {
+  background: #F5A628;
+  color: #fff;
+  text-align: center;
+}
+.intro-paragraph {
+  color: #A85B00;
+  font-size: 1.2rem;
+  line-height: 1.57em;
+}
+.card-resource {
+  border-color: #BAEAFC;
+  border-width: 2px;
+}
+.card-resource .wp-block-group__inner-container {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between;
+}
+.header-resource {
+  background: #BAEAFC;
+  color: #11476A;
+  font-size: 1.2rem;
+}
+.btn-resource a {
+  background: #FFBE57;
+  color: #fff;
+  line-height: 1.25em;
+}
 @media (min-width: 576px) and (max-width: 799px) {
   .card-deck .card {
     position: relative;

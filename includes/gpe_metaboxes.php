@@ -10,7 +10,7 @@ function homeslider_metabox_callback($post) {
 function homeslide_savemetabox() {
 	global $post;
 	$post_id = $post->ID;
-	update_post_meta ( $post_id, 'homesliderurl', sanitize_text_field ( $_POST ['homesliderurl'] ) );
+isset($POST['homesliderurl']) && update_post_meta ( $post_id, 'homesliderurl', sanitize_text_field ( $_POST ['homesliderurl'] ) );
 }
 function otherlinks_metabox() {
 	add_meta_box ( 'otherlink_meta_url', __ ( 'Other Link URL', 'layerswp' ), 'otherlink_metabox_callback', "otherlink", 'normal', 'high' );
@@ -23,7 +23,7 @@ function otherlink_metabox_callback($post) {
 function otherlinks_savemetabox() {
 	global $post;
 	$post_id = $post->ID;
-	update_post_meta ( $post_id, 'otherlink_meta_url', sanitize_text_field ( $_POST ['otherlink_meta_url'] ) );
+	isset($POST['otherlink_meta_url']) && update_post_meta ( $post_id, 'otherlink_meta_url', sanitize_text_field ( $_POST ['otherlink_meta_url'] ) );
 }
 function figures_metabox() {
 	add_meta_box ( 'figuresurl_meta_url', __ ( 'URL', 'layerswp' ), 'figures_metabox_callback', "figuresandcharts", 'normal', 'high' );
@@ -56,8 +56,8 @@ function figures_metabox_callback($post) {
 function figures_savemetabox() {
 	global $post;
 	$post_id = $post->ID;
-	update_post_meta ( $post_id, 'figuresurl_meta_url', sanitize_text_field ( $_POST ['figuresurl_meta_url'] ) );
-	update_post_meta ( $post_id, 'figuresurl_meta_cat', sanitize_text_field ( $_POST ['figuresurl_meta_cat'] ) );
+	isset($POST['figuresurl_meta_url']) && update_post_meta ( $post_id, 'figuresurl_meta_url', sanitize_text_field ( $_POST ['figuresurl_meta_url'] ) );
+	isset($POST['figuresurl_meta_cat']) && update_post_meta ( $post_id, 'figuresurl_meta_cat', sanitize_text_field ( $_POST ['figuresurl_meta_cat'] ) );
 	
 }
 
@@ -99,9 +99,9 @@ function experts_metabox_callback($post) {
 function experts_savemetabox() {
 	global $post;
 	$post_id = $post->ID;
-	update_post_meta ( $post_id, 'experts_meta_designation', sanitize_text_field ( $_POST ['experts_meta_designation'] ) );
-	update_post_meta ( $post_id, 'experts_meta_email', sanitize_text_field ( $_POST ['experts_meta_email'] ) );
-	update_post_meta ( $post_id, 'experts_meta_phone', sanitize_text_field ( $_POST ['experts_meta_phone'] ) );
+	isset($POST['experts_meta_designation']) && update_post_meta ( $post_id, 'experts_meta_designation', sanitize_text_field ( $_POST ['experts_meta_designation'] ) );
+	isset($POST['experts_meta_email']) && update_post_meta ( $post_id, 'experts_meta_email', sanitize_text_field ( $_POST ['experts_meta_email'] ) );
+	isset($POST['experts_meta_phone']) && update_post_meta ( $post_id, 'experts_meta_phone', sanitize_text_field ( $_POST ['experts_meta_phone'] ) );
 	
 }
 
@@ -112,14 +112,15 @@ function team_add_meta_box() {
 }
 function team_save_meta_box() {
 	global $post;
-	$post_id = $post->ID;
-	// update_post_meta($post_id, 'team_member_name', sanitize_text_field( $_POST['team_member_name']));
-	// update_post_meta($post_id, 'team_member_institute', sanitize_text_field( $_POST['team_member_institute']));
-	// update_post_meta($post_id, 'team_member_description', sanitize_text_field( $_POST['team_member_description']));
-	update_post_meta ( $post_id, 'team_member_designation', sanitize_text_field ( $_POST ['team_member_designation'] ) );
-	update_post_meta ( $post_id, 'team_twitter_link', sanitize_text_field ( $_POST ['team_twitter_link'] ) );
-	update_post_meta ( $post_id, 'team_linkedin_link', sanitize_text_field ( $_POST ['team_linkedin_link'] ) );
-	update_post_meta ( $post_id, 'team_facebook_link', sanitize_text_field ( $_POST ['team_facebook_link'] ) );
+	if ($post_id = $post->ID) {
+    // isset($POST['']) && update_post_meta($post_id, 'team_member_name', sanitize_text_field( $_POST['team_member_name']));
+    // isset($POST['']) && update_post_meta($post_id, 'team_member_institute', sanitize_text_field( $_POST['team_member_institute']));
+    // isset($POST['']) && update_post_meta($post_id, 'team_member_description', sanitize_text_field( $_POST['team_member_description']));
+    isset($POST['team_member_designation']) && update_post_meta ( $post_id, 'team_member_designation', sanitize_text_field ( $_POST ['team_member_designation'] ) );
+    isset($POST['team_twitter_link']) && update_post_meta ( $post_id, 'team_twitter_link', sanitize_text_field ( $_POST ['team_twitter_link'] ) );
+    isset($POST['team_linkedin_link']) && update_post_meta ( $post_id, 'team_linkedin_link', sanitize_text_field ( $_POST ['team_linkedin_link'] ) );
+    isset($POST['team_facebook_link']) && update_post_meta ( $post_id, 'team_facebook_link', sanitize_text_field ( $_POST ['team_facebook_link'] ) );
+  }
 }
 function team_meta_box_callback($post) {
 	wp_nonce_field ( 'team_meta_box', 'team_meta_box_nonce' );

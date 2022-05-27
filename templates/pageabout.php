@@ -12,8 +12,10 @@
 										);
 										$menulist = get_posts ( $args );
 										
-										$currentp = $_GET['view'];
+                    // This no longer works
+										//$currentp = $_GET['view'];
 										//debug($currentp);
+                    $currentp = get_the_title();
 										$urld = get_the_permalink(get_the_ID());
 										
 										foreach ( $menulist as $menu ) {
@@ -41,7 +43,7 @@
 						<figure class="mb-4 ">
 							<?php 
 								$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($paged->ID), 'post');
-								if($thumb[0]){
+								if( !empty($thumb) && is_string($thumb[0]) ){
 									echo '<img src="'.$thumb[0].'" alt="about-sanchar" class="w-100 d-none d-md-block d-lg-block">';
 								}
 							?>
